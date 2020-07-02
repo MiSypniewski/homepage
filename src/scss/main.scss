@@ -4,10 +4,7 @@
 @import "modules/hero.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: $white;
+  color: $textDefault;
   min-height: 100vh;
 }
