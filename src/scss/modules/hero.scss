@@ -21,7 +21,6 @@
     margin: 48px 16px 16px;
     text-align: center;
     display: flex;
-    // flex-direction: column;
 
     @media (min-width: $mobileM) {
       margin: 80px 16px 16px;
@@ -33,12 +32,8 @@
 
     @media (min-width: $tablet) {
       margin: 160px 16px 16px;
-      // max-width: 512px;
       &::before {
         content: "";
-        // position: absolute;
-        // top: 50%;
-        // left: 0;
         display: block;
         height: 256px;
         width: 128px;
@@ -47,9 +42,6 @@
       }
       &::after {
         content: "";
-        // position: absolute;
-        // top: 50%;
-        // right: 0;
         display: block;
         height: 256px;
         width: 128px;
@@ -71,7 +63,6 @@
 
   &__header {
     font-weight: bold;
-    // margin: 40px 16px 16px;
     font-size: 26px;
     line-height: 32px;
     color: $textDark;
@@ -100,8 +91,6 @@
 }
 
 .button {
-  // display: block;
-  // margin: 48px auto 16px;
   font-size: 20px;
   line-height: 40px;
 
