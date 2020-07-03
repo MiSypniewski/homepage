@@ -32,9 +32,28 @@
     @media (min-width: $tablet) {
       margin: 160px 16px 16px;
       max-width: 512px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 256px;
+        width: 128px;
+        background: url("../assets/img/decoration_left.svg") center no-repeat;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        // display: block;
+        height: 256px;
+        width: 128px;
+        background: url("../assets/img/decoration_right.svg") center no-repeat;
+      }
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $laptop) {
       max-width: 768px;
     }
   }
