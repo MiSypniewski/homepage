@@ -2,21 +2,41 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   &__img {
     height: 96px;
     width: 96px;
-    margin-top: 32px;
-    border: 1px solid $blue;
+    border: 16px solid $blueLightest;
     border-radius: 50%;
     text-align: center;
+
+    @media (min-width: $tablet) {
+      border: 16px solid $blueLightest;
+    }
   }
 
   &__wrapper {
-    padding: 48px 16px 16px;
+    margin: 48px 16px 16px;
     text-align: center;
+
+    @media (min-width: $mobileM) {
+      margin: 80px 16px 16px;
+    }
+
+    @media (min-width: $mobileL) {
+      margin: 96px 16px 16px;
+    }
+
+    @media (min-width: $tablet) {
+      margin: 160px 16px 16px;
+      max-width: 512px;
+    }
+
+    @media (min-width: $tablet) {
+      max-width: 768px;
+    }
   }
 
   &__header {
@@ -34,7 +54,18 @@
   &__descryption {
     color: $textDefault;
     line-height: 32px;
-    // margin: 0 16px;
+
+    @media (min-width: $mobileM) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $mobileL) {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 128px;
+    }
   }
 }
 
