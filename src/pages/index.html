@@ -126,17 +126,26 @@
     />
   </head>
   <body>
-    <head class="head">
-      <div class="head__img">Photo</div>
-      <h1 class="head__header">My name is Michał and I’m an aspiring Frontend developer.</h1>
-      <p class="head__descryption">
-        You might be interested in checking the list of <a href="#" class="head__link">my skills</a> . Don’t forget to
-        have a glimpse at <a href="#" class="head__link">my projects</a>. Currently I’m looking for a new challenges so
-        if you have one - <a href="#" class="head__link">contact me</a> 😊
-      </p>
-      <a href="#" class="button">mi.sypniewski@gmail.com</a>
-    </head>
     <main>
+      <section class="hero">
+        <div class="hero__imgbox">
+          <p class="hero__hello">"Hey there! 👋"</p>
+          <div class="hero__img">Photo</div>
+        </div>
+        <div class="hero__wrapper">
+          <div class="hero__box">
+            <h1 class="hero__header">
+              My name is Michał and I’m an aspiring <span class="hero__specjal">Frontend developer.</span>
+            </h1>
+            <p class="hero__descryption">
+              You might be interested in checking the list of <a href="#" class="hero__link">my skills</a> . Don’t
+              forget to have a glimpse at <a href="#" class="hero__link">my projects</a>. Currently I’m looking for a
+              new challenges so if you have one - <a href="#" class="hero__link">contact me</a> 😊
+            </p>
+            <a href="#" class="hero__button">mi.sypniewski@gmail.com</a>
+          </div>
+        </div>
+      </section>
       <section class="section section--blue">
         <h2 class="section__header">
           My skills
@@ -175,7 +184,9 @@
           <div class="article__emoji">🎓</div>
           <h3 class="article__header">Want to lern</h3>
           <ul class="article__list">
+            <li class="article__item">React Hooks</li>
             <li class="article__item">Gatsby</li>
+            <li class="article__item">GSAP</li>
             <li class="article__item">Websockets</li>
             <li class="article__item">Typescript</li>
             <li class="article__item">Server side rendering</li>

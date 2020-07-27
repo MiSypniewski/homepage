@@ -7,6 +7,16 @@
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Roboto Mono', monospace;
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background: $white;
   color: $textDefault;
