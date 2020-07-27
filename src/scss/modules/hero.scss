@@ -8,6 +8,7 @@
   &__img {
     height: 96px;
     width: 96px;
+    box-sizing: content-box;
     border: 16px solid $blueLightest;
     border-radius: 50%;
     text-align: center;
@@ -97,8 +98,9 @@
     color: $textDark;
   }
 
-  &__span {
+  &__specjal {
     color: $blue;
+    white-space: nowrap;
   }
 
   &__descryption {
