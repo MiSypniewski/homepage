@@ -1,12 +1,4 @@
 .hero {
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-
-  // text-align: center;
-
   margin-bottom: 88px;
 
   &__imgbox {
@@ -14,8 +6,13 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-    margin-top: 48px;
+    margin-top: 32px;
     position: relative;
+
+    @media (min-width: $mobileM) {
+      margin-top: 56px;
+    }
+
     @media (min-width: $tablet) {
       margin-top: 96px;
     }
@@ -83,7 +80,7 @@
   }
 
   &__wrapper {
-    margin: 48px 16px 16px;
+    margin: 32px 16px 16px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -133,6 +130,10 @@
     font-size: 26px;
     line-height: 32px;
     color: $textDark;
+
+    @media (min-width: $mobileM) {
+      margin-bottom: 48px;
+    }
   }
 
   &__specjal {
@@ -145,7 +146,7 @@
     line-height: 32px;
 
     @media (min-width: $mobileM) {
-      margin-bottom: 32px;
+      margin-bottom: 48px;
     }
 
     @media (min-width: $mobileL) {
