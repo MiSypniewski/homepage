@@ -1,0 +1,92 @@
+.skills {
+  background-color: $blue;
+  color: $white;
+  padding: 64px 16px 88px;
+
+  &__header {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+}
+
+.skill {
+  text-align: center;
+
+  &__emoji {
+    margin-top: 64px;
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  &__header {
+    margin: 16px 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+  }
+  &__list {
+    font-family: Nunito;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 16px;
+    list-style: none;
+    @media (min-width: $mobileM) {
+      padding-left: 48px;
+    }
+    @media (min-width: $mobileL) {
+      padding-left: 64px;
+    }
+  }
+  &__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+
+    &--green {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 6px;
+        left: -24px;
+        height: 12px;
+        width: 9px;
+        background: url("../assets/img/small-tick-green.svg") center no-repeat;
+      }
+    }
+    &--light {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 6px;
+        left: -24px;
+        height: 12px;
+        width: 9px;
+        background: url("../assets/img/small-tick-light.svg") center no-repeat;
+      }
+    }
+    &--dot {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: -24px;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: $white;
+        // background: url("../assets/img/small-tick-light.svg") center no-repeat;
+      }
+    }
+  }
+}
