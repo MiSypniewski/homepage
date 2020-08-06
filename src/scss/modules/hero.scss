@@ -1,5 +1,13 @@
 .hero {
-  margin: 98px 16px 92px;
+  padding: 98px 16px 88px;
+  
+  text-align: center;
+  @media (min-width: $mobileL) {
+    height: 100vh;
+    padding: 98px 16px 0;
+  }
+
+
 
   &__imgbox {
     display: flex;
@@ -13,7 +21,7 @@
     // }
 
     @media (min-width: $tablet) {
-      margin-bottom: 56px;
+      margin-bottom: 120px;
     }
   }
 
@@ -98,7 +106,7 @@
     // }
 
     @media (min-width: $tablet) {
-      // margin: 96px 8px 16px;
+      // margin-top: 256px;
       &::before {
         content: "";
         display: block;
@@ -120,6 +128,7 @@
 
   &__box {
     @media (min-width: $tablet) {
+      // margin-top: 32px;
       max-width: 512px;
     }
 
@@ -134,10 +143,10 @@
     font-size: 26px;
     line-height: 32px;
     color: $textDark;
-    margin-bottom: 16px;
+    margin: 16px 0;
 
-    @media (min-width: $mobileM) {
-      // margin-bottom: 48px;
+    @media (min-width: $mobileL) {
+      margin: 32px 0;
     }
 
     @media (min-width: $laptop) {
@@ -155,15 +164,16 @@
     margin: 0;
     color: $textDefault;
     line-height: 32px;
+    font-size: 16px;
     margin-bottom: 48px;
 
     // @media (min-width: $mobileM) {
     //   margin-bottom: 48px;
     // }
 
-    // @media (min-width: $mobileL) {
-    //   margin-bottom: 64px;
-    // }
+    @media (min-width: $tablet) {
+      // margin-top: 32px;
+    }
 
     @media (min-width: $laptop) {
       // margin-bottom: 96px;
@@ -184,5 +194,9 @@
     font-weight: bold;
     background-color: $textLink;
     text-decoration: none;
+
+    @media (min-width: $mobileL) {
+      margin: 64px auto 0;
+    }
   }
 }
