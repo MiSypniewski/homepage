@@ -1,7 +1,7 @@
 .hero {
   padding: 98px 16px 88px;
   text-align: center;
-  @media (min-width: $mobileL) {
+  @media (min-width: $tablet) {
     height: 100vh;
     padding: 98px 16px 0;
   }
@@ -144,6 +144,12 @@
     white-space: nowrap;
   }
 
+  &__link {
+    text-decoration: underline $textLink;
+    color: $textLink;
+    white-space: nowrap;
+  }
+
   &__descryption {
     margin: 0;
     color: $textDefault;
@@ -172,7 +178,7 @@
     text-decoration: none;
 
     @media (min-width: $mobileL) {
-      margin: 64px auto 0;
+      margin: 64px auto;
     }
   }
 }
