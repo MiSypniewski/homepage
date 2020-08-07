@@ -1,0 +1,53 @@
+.contact {
+  background-color: $blueLight;
+  // color: $blueLight;
+  padding: 64px 16px 88px;
+  width: 100%;
+  
+  &__wrapper {
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__descryption {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    font-family: Nunito;
+    font-size: 20px;
+    line-height: 40px;
+
+    padding: 4px 24px;
+    border-radius: 64px;
+    color: $white;
+    font-weight: bold;
+    background-color: $textLink;
+    text-decoration: none;
+    margin: 32px auto;
+
+    @media (min-width: $mobileL) {
+      margin: 64px auto;
+    }
+  }
+}
