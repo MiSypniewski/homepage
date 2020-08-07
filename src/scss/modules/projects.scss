@@ -1,0 +1,105 @@
+.projects {
+  padding: 64px 16px 88px;
+
+
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+    @media( min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__descryption {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    @media( min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__wrapper {
+    margin: 46px auto 0;
+    max-width: 1024px;
+    @media (min-width: $tablet){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 96px auto 0;
+    }
+  }
+}
+
+.project {
+  border-radius: 16px;
+  background-color: $consoleGrey2;
+  overflow: hidden;
+  margin: 8px;
+  @media (min-width: $laptop) {
+    max-width: 548px;
+    margin: 12px;
+  }
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+  &__bar {
+    background-color: $consoleGrey1;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+  }
+  &__dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: $consoleGrey3;
+    margin-right: 8px;
+  }
+  &__box {
+    font-family: "Roboto Mono";
+    padding: 24px 16px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $consoleGrey4;
+    @media (min-width: $tablet) {
+      padding: 24px 32px;
+    }
+  }
+  &__logo {
+    margin-bottom: 8px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    &--special {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  &__label {
+    text-align: right;
+  }
+  &__special {
+    color: $consoleGrey5;
+  }
+  &__link {
+    color:$consoleTextLink;
+    text-decoration: underline $consoleTextLink;
+  }
+}
