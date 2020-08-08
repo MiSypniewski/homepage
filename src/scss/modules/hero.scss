@@ -2,14 +2,6 @@
   padding: 98px 16px 88px;
   text-align: center;
 
-
-  // @media (min-width: $tablet) {
-  //   height: 100vh;
-  //   padding: 98px 16px 0;
-  // }
-
-
-
   &__imgbox {
     display: flex;
     justify-content: center;
@@ -159,7 +151,6 @@
     font-size: 16px;
     margin-bottom: 48px;
 
-
     @media (min-width: $laptop) {
       font-size: 20px;
       line-height: 40px;
@@ -179,8 +170,12 @@
     background-color: $textLink;
     text-decoration: none;
 
-    @media (min-width: $mobileL) {
-      margin: 64px auto;
+    @media (min-width: $mobileM) {
+      margin: 16px auto 32px;
+    }
+
+    @media (min-width: $tablet) {
+      margin: 64px auto 32px;
     }
   }
 }
