@@ -18,7 +18,7 @@ gsap.fromTo(heroBubbleHTML, { scale: 0 }, { scale: 1, transformOrigin: '0% 100%'
 gsap.fromTo(heroHandHTML, { rotate: -10 }, { rotate: 10, ease: "easeInOut", transformOrigin: '80% 80%', duration: 0.3, repeat: -1, yoyo: true });
 gsap.fromTo(skillsHTML.children, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.3, duration: 1, scrollTrigger: { trigger: '.skills', start: "top 40%" } });
 gsap.fromTo(projectsHTML.children, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.3, duration: 1, scrollTrigger: { trigger: '.projects', start: "top 40%" } });
-gsap.fromTo(contactHTML.children, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.3, duration: 1, scrollTrigger: { trigger: '.contact', start: "50% 10%", markers: true } });
+gsap.fromTo(contactHTML.children, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.3, duration: 1, scrollTrigger: { trigger: '.contact', start: "50% 10%" } });
 
 
 const projectScheme = (name, description, githuburl, homepage) => {
