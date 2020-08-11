@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const date = new Date().toISOString().slice(0, 10);
-const projects = [];
 const projectsWrapperHTML = document.querySelector(".projects__wrapper--js");
 
 const width = window.innerWidth;
@@ -66,6 +65,7 @@ const projectScheme = (name, description, githuburl, homepage) => {
 };
 
 if (localStorage.getItem("date") !== date) {
+  const projects = [];
   fetch("https://api.github.com/users/misypniewski/repos")
     .then((resp) => resp.json())
     .then((resp) => {
