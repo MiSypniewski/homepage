@@ -1,3 +1,3 @@
 # HOMEPAGE - Michał Sypniewski
 
-![cover] (https://misypniewski.github.io/homepage/og.png)
+![cover](https://misypniewski.github.io/homepage/og.png)
