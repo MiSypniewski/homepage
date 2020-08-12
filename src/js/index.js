@@ -8,6 +8,7 @@ const projectsWrapperHTML = document.querySelector(".projects__wrapper--js");
 
 const width = window.innerWidth;
 const animationSections = document.querySelectorAll(".animation--js");
+const contactHTML = document.querySelector(".contact");
 const heroHandHTML = document.querySelector(".hero__hand");
 const heroBubbleHTML = document.querySelector(".hero__bubble");
 
@@ -29,11 +30,24 @@ if (width >= 768) {
         stagger: 0.3,
         duration: 0.8,
         ease: "easeInOut",
-        scrollTrigger: { trigger: section, start: "top 50%" },
+        scrollTrigger: { trigger: section, start: "top 40%" },
       }
     );
   });
 }
+
+gsap.fromTo(
+  contactHTML.children,
+  { y: "+=100", opacity: 0 },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.3,
+    duration: 0.8,
+    ease: "easeInOut",
+    scrollTrigger: { trigger: ".contact", start: "top 80%" },
+  }
+);
 
 const projectScheme = (name, description, githuburl, homepage) => {
   return `<article class="project">
