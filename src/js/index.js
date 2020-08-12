@@ -34,20 +34,22 @@ if (width >= 768) {
       }
     );
   });
+
+  gsap.fromTo(
+    contactHTML.children,
+    { y: "+=100", opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      stagger: 0.3,
+      duration: 0.8,
+      ease: "easeInOut",
+      scrollTrigger: { trigger: ".contact", start: "top 80%" },
+    }
+  );
 }
 
-gsap.fromTo(
-  contactHTML.children,
-  { y: "+=100", opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    stagger: 0.3,
-    duration: 0.8,
-    ease: "easeInOut",
-    scrollTrigger: { trigger: ".contact", start: "top 80%" },
-  }
-);
+
 
 const projectScheme = (name, description, githuburl, homepage) => {
   return `<article class="project">
