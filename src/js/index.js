@@ -13,11 +13,22 @@ const heroHandHTML = document.querySelector(".hero__hand");
 const heroBubbleHTML = document.querySelector(".hero__bubble");
 
 if (width >= 768) {
-  gsap.fromTo(heroBubbleHTML, { scale: 0 }, { scale: 1, transformOrigin: "0% 100%", duration: 0.3, delay: 0.5 });
+  gsap.fromTo(
+    heroBubbleHTML,
+    { scale: 0 },
+    { scale: 1, transformOrigin: "0% 100%", duration: 0.3, delay: 0.5 }
+  );
   gsap.fromTo(
     heroHandHTML,
     { rotate: -10 },
-    { rotate: 10, ease: "easeInOut", transformOrigin: "80% 80%", duration: 0.3, repeat: -1, yoyo: true }
+    {
+      rotate: 10,
+      ease: "easeInOut",
+      transformOrigin: "80% 80%",
+      duration: 0.3,
+      repeat: -1,
+      yoyo: true,
+    }
   );
 
   animationSections.forEach((section) => {
@@ -48,8 +59,6 @@ if (width >= 768) {
     }
   );
 }
-
-
 
 const projectScheme = (name, description, githuburl, homepage) => {
   return `<article class="project">
@@ -88,7 +97,13 @@ if (localStorage.getItem("date") !== date) {
       resp.forEach((item) => {
         if (item.description != null) {
           projects.push(item);
-          projectsWrapperHTML.innerHTML += projectScheme(item.name, item.description, item.html_url, item.homepage);
+          const { name, description, html_url, homepage } = item;
+          projectsWrapperHTML.innerHTML += projectScheme(
+            name,
+            description,
+            html_url,
+            homepage
+          );
         }
         localStorage.setItem("projects", JSON.stringify(projects));
         localStorage.setItem("date", date);
@@ -98,7 +113,12 @@ if (localStorage.getItem("date") !== date) {
 } else {
   const projects = JSON.parse(localStorage.getItem("projects"));
   projects.forEach((item) => {
-    projectsWrapperHTML.innerHTML += projectScheme(item.name, item.description, item.html_url, item.homepage);
+    projectsWrapperHTML.innerHTML += projectScheme(
+      item.name,
+      item.description,
+      item.html_url,
+      item.homepage
+    );
   });
 }
 
